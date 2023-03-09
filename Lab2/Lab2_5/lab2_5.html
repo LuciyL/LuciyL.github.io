@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1>Форма регистрации пользователя</h1>
-<form> 
+<form action="LuciyL.github.io/test.txt" enctype="text/plain" method="post"> 
 <table>
     <tr>
         <td><label>E-mail:</label></td>
@@ -20,8 +20,8 @@
     </tr>
     <tr>
         <td><label>Пол</label></td>
-        <td><input type="radio" name="gen" value="man"> Мужской 
-            <input type="radio" name="gen" value="wom"> Женский </td>
+        <td><label><input type="radio" name="gen" value="man" checked> Мужской</label> 
+            <label><input type="radio" name="gen" value="wom"> Женский</label> </td>
     </tr>
     <tr>
         <td><label>Год рождения</label></td>
@@ -40,6 +40,24 @@
                 <option>2010</option>
             </select>
         </td>
+    </tr>
+    <tr>
+        <td><label>Я знаю</label></td>
+        <td>
+            <p><label><input type="checkbox" name="lang" value="ru" checked>Русский</label></p>
+            <p><label><input type="checkbox" name="lang" value="es" >Испаснский</label></p>
+            <p><label><input type="checkbox" name="lang" value="ge" >Немецкий</label></p>
+            <p><label><input type="checkbox" name="lang" value="en" >Английский</label></p>
+            <p><label><input type="checkbox" name="lang" value="ch" >Китайский</label></p>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Обо мне</label></td>
+        <td><textarea rows="5" cols="30" name="dis"></textarea> </td>
+    </tr>
+    <tr>
+        <td><input type="submit" value="Готово"></td>
+        <td><input type="reset" value="Очистить"></td>
     </tr>
 
 </table>
