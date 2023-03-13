@@ -4,4 +4,6 @@ h1, h2{
 strong{
     font-family: 'Caveat', sans-serif;
 }
-body { background: #ab11cf url(/images/background.png);}
+body {
+     background: #ab11cf url(pattern-waved-hexagones.png);
+}
