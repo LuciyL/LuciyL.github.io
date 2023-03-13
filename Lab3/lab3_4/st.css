@@ -5,5 +5,5 @@ strong{
     font-family: 'Caveat', sans-serif;
 }
 body {
-     background-image: href="Lab3/lab3_4/pattern-waved-hexagones.png";
+     background: url(pattern-waved-hexagones.png);
 }
