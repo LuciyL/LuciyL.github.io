@@ -7,3 +7,6 @@ strong{
 body {
     background-image: url("yellow-wall.jpg");
 }
+em{
+    border-bottom: thick double;
+}
