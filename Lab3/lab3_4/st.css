@@ -12,6 +12,6 @@ body {
     background-image: url("yellow-wall.jpg");
 }
 em{
-    border-bottom: double;
-    padding: 20px;
+    padding: 2px;
+    border-bottom: double;    
 }
