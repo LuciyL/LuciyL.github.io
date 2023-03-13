@@ -13,4 +13,5 @@ body {
 }
 em{
     border-bottom: double;
+    padding: 20px;
 }
