@@ -1,86 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="utf-8">
-<title>Главная страница</title>
-<link type="text/css" rel="stylesheet" href="css/main.css">
-<style>
-.clearfix::after {
-			content: "";
-			display: table;
-			clear: both;
-		}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <style>
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    html,body {
+	    height: 100%;
+    }
 
-		#header {
-			background: #bcd818;
-			height: 100px;
-			background-size: cover;
-		}
-
-		#left {
-			background-image: url("pic/left.png");
-			width: 200px;
-			background-size: auto 100%;
-			float: left;
-		}
-
-		#left ul li {
-			list-style-image: url("pic/plus.png");
-		}
-
-		#right {
-			padding-left: 20px;
-			background-image: url("pic/right.png");
-			width: 200px;
-			background-size: auto 100%;
-			float: right;
-		}
-
-		#center {
-			padding-left: 10px;
-			margin: 0 200px;
-			float: none;
-		}
-
-		#inner {
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
-
-		#footer {
-			background: rgb(21, 135, 13);
-			background-size: cover;
-			height: 100px;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			width: 100%;
-		}
-
-		#end {
-			clear: both;
-		}
-	
-</style>
-</head>
-<body>
-<div id="container">
-	<div id="header"></div>
-	<div id="outer">
-		<div id="inner">
-			<div id="left" style="clear: inline-end">
-				<ul>
-					<li><a href="#">Камень</a></li>
-					<li><a href="#">Ножницы</a></li>
-					<li><a href="#">Бумага</a></li>
-				</ul>
-			</div>
-			<div id="right" style="clear: inline-end">right</div>
-			<div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
-			<div id="end"></div>
-		</div>
-	</div>
-	<div id="footer"></div>
-</div>
-</body>
-</html>
+    #container{
+        position: relative;
+        min-height: 100%;
+        width: 800px;
+        border: 6px solid #ffffff; 
+        text-align: left; 
+        margin: 0 auto;
+    }
+    #content{
+        background: #ffffff;
+        padding-bottom: 90px;
+        
+    }
+    #header{
+        background: #CCDDEE;
+        height: 100px;
+        border: 10px solid #ffffff;
+        
+    }
+    #left{
+        background-image: url(left.png);
+        float: left;
+        height: 180px;
+        width: 200px;
+        border: 10px solid #ffffff;
+        
+    
+    }
+    #right{
+        background-image: url(right.png);
+        float: right;
+        height: 180px;
+        width: 200px;
+        border: 10px solid #ffffff;
+        
+    
+    }
+    #center{
+        width: 600px;
+        background:rgb(255, 255, 255);
+        border: 10px solid #ffffff;
+        margin: 0;
+    
+    }
+    #footer{
+        position: absolute;
+        background: #c4b7f8;
+        height: 80px;
+        width: 783px;
+        left: 0;
+        bottom: 0;
+        border: 10px solid #ffffff;
+    
+    }
+    li { 
+        list-style-image: url(plus.png); 
+    } 
+    </style>
+    </head>
+    <body>
+    
+     <div id = "container" >
+        <div id="content">
+        <div id="header"></div>
+        <div id="outer">
+            <div id="inner">
+                <div id="left">
+                    <ul>
+                        <li><a href="#">Камень</a></li>
+                        <li><a href="#">Ножницы</a></li>
+                        <li><a href="#">Бумага</a></li>
+                    </ul>
+                </div>
+                <div id="right">right</div>
+                <div id="center">center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center center</div>
+                <div id="end" class="clearfix"></div>
+            </div>
+        </div>
+     </div>
+        <div id="footer"></div>
+    </div>
+    </body>
+    </html>
