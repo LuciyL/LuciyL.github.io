@@ -2,41 +2,40 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Lab7_2</title>
-	<style>
-		.placeholder:-moz-placeholder{
-			color: blue;
-		}
-
-		.placeholder::-webkit-input-placeholder{
-			color: blue;
-		}
-
-		div{
-			color: blue;
-			font-size: 12px;
-		}
-	</style>
+	<title>Lab7_3</title>
 </head>
 <body>
-	<div></div>
-	<input type="text" class="placeholder" placeholder="подсказка"> 
-	
+	<div> </div>
+
 	<script>
 		'use strict';
-
-		let input = document.querySelector(".placeholder");
-		let div = document.querySelector("div");
-
-		input.onfocus = function(){
-			div.innerHTML = input.getAttribute("placeholder");
-			input.setAttribute("placeholder","");
-		}; 
-		
-		input.onblur = function(){ 
-			input.setAttribute("placeholder",div.innerHTML);
-			div.innerHTML = ""; 
-		}; 
+		let text;
+		document.addEventListener('keydown', function(event){
+  			if(event.code == 'KeyE' && (event.ctrlKey || event.metaKey)) {
+  				event.preventDefault();
+    			let textarea = document.createElement("textarea");
+    			let div = document.querySelector("div");
+    			text = div.innerHTML;
+    			textarea.value = div.innerHTML;
+    			div.parentNode.replaceChild(textarea, div);
+    			textarea.focus();
+  			}
+  			else if(event.code == 'KeyS' && (event.ctrlKey || event.metaKey)){
+  				event.preventDefault();
+    			let textarea = document.querySelector("textarea");
+    			let div = document.createElement("div");
+    			div.innerHTML = textarea.value;
+    			textarea.parentNode.replaceChild(div, textarea);
+  			}
+  			else if(event.code == 'Escape'){
+  				event.preventDefault();
+    			let textarea = document.querySelector("textarea");
+    			let div = document.createElement("div");
+    			if(text)
+    				div.innerHTML = text;
+    			textarea.parentNode.replaceChild(div, textarea);
+  			}
+		});
 
 	</script>
 </body>
