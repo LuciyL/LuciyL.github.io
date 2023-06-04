@@ -14,7 +14,7 @@
             subObj[arr[i]] = true;
         }
         subObj[cls] = true;
-        arr = Object.keys(subObj);        
+        arr = Object.keys(subObj); 
         obj.className = arr.join(" ");        
     }
     function removeClass(obj, cls) {
@@ -23,9 +23,9 @@
 			obj.className = sub.trim(" ");
 		}
 
-    addClass(obj, 'new');
-    addClass(obj, 'open');
-    addClass(obj, 'me');
+    addClass(obj, 'new'); 
+    addClass(obj, 'open');  
+    addClass(obj, 'me'); 
 
     alert(obj.className);
     removeClass(obj.me);
