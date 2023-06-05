@@ -38,14 +38,14 @@ function factorial(n) {
  * @returns  n-ый член ряда Фибоначчи
  */
 function fib(n) {
-    a = BigInt(1);
-    b = BigInt(1);
+    let a = BigInt(1);
+    let b = BigInt(1);
     if (n == BigInt(0)) {
         return BigInt(0);
     }
     else {
-        for ( i = BigInt(3); i <= n; i++) {
-            c = a + b;
+        for (let i = BigInt(3); i <= n; i++) {
+           let c = a + b;
             a = b;
             b = c;
         }
