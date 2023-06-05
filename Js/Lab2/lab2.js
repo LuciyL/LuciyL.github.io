@@ -1,3 +1,4 @@
+'use strict';
 /**
  * Возводит х в степень n 
  * @param {number} x основание степени
@@ -43,7 +44,7 @@ function fib(n) {
         return BigInt(0);
     }
     else {
-        for (i = BigInt(3); i <= n; i++) {
+        for ( i = BigInt(3); i <= n; i++) {
             c = a + b;
             a = b;
             b = c;
@@ -69,7 +70,7 @@ function compare(x) {
  */
 function sum() {
     var result = 0;
-    for (var i = 0; i < arguments.length; i++) {
+    for (let i = 0; i < arguments.length; i++) {
         result += arguments[i]
     }
     return result;
