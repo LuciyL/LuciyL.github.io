@@ -37,7 +37,7 @@ function factorial(n) {
  * @param {number} n 
  * @returns  n-ый член ряда Фибоначчи
  */
-function fib(n) {
+export function fib(n) {
     let a = BigInt(1);
     let b = BigInt(1);
     if (n == BigInt(0)) {
