@@ -1,26 +1,22 @@
-
-function pow(x, n)
-{
-    return x**n; 
+//функция возвращает x в степени n (n - целое число).
+function pow(x, n) {
+    return x ** n; //возвращаем х в степени n
 }
-
-function sumTo(n)
-{
-    return (n*(n+1))/2  
+// функция вычисляет сумму чисел от 1 до n включительно.
+function sumTo(n) {
+    return (n * (n + 1)) / 2  //формула суммы арифметической прогрессии
 
 }
-
-function factorial(n)
-{
-    if (n<=0)
-    {
-        return 1n; 
+//функция возвращает факториал числа n
+function factorial(n) {
+    if (n <= 0) {
+        return 1n; //возвращаем 1 для чисел, меньших 0
     }
-    else{
-        return ( BigInt (n) *  BigInt(factorial(n-1))); 
+    else {
+        return (BigInt(n) * BigInt(factorial(n - 1))); //использование рекурсии 
     }
 }
-
+//функция возвращает n-е число Фибоначчи
 export function fib(n) {
     let a = 1n;
     let b = 1n;
@@ -36,23 +32,21 @@ export function fib(n) {
         return b;
     }
 }
-
-function compare(x)
-{
-return function(y)
-{
-    if (y>x) return true;
-    else if (y<x) return false;
-    else if (y==x) return null;
+//функция принимает целочисленное значение x и возвращает 
+//анонимную функцию. Анонимная функция возвращает 
+//результат сравнения значений y и x
+function compare(x) {
+    return function (y) {
+        if (y > x) return true;
+        else if (y < x) return false;
+        else if (y == x) return null;
+    }
 }
-}
-
-function sum()
-{
-    var result=0; 
-    for (var i=0; i<arguments.length; i++)
-    {
-        result+=arguments[i] 
+//функция возвращает сумму всех своих аргументов.
+function sum() {
+    var result = 0; //сумма
+    for (var i = 0; i < arguments.length; i++) {
+        result += arguments[i] //складываем элементы на соответствующих местах
     }
     return result;
 }
