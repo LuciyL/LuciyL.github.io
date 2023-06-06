@@ -8,12 +8,15 @@
             className: 'open menu'
         }
 
+
+
         obj.addClass = function addClass(cls) {
             let arr = this.className.split(" ");
             if (!arr.includes(cls)) {
                 arr.push(cls)
             }
             this.className = arr.join(" ");
+            return this;
         }
         obj.removeClass = function removeClass(cls) {
             let arr = this.className.split(" ");
@@ -24,12 +27,15 @@
                 }
             }
             obj.className = arr.join(' ');
+            return this;
         }
 
         obj.addClass('new');
         obj.addClass('hello world');
         obj.addClass('open');
+
         console.log(obj.className);
+
 
         obj.removeClass('Js');
         obj.removeClass('new');
